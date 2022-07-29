@@ -12,6 +12,7 @@
 body {
     background-image: url(images/bg-desktop.svg);
     background-color: var(--Violet);
+    background-size: cover;
     font-family: "Poppins", sans-serif;
     margin-left: 6.9em;
 }
