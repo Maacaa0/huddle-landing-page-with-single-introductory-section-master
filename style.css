@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg-desktop.svg);
+    background-color: var(--Violet);
+    font-family: "Poppins", sans-serif;
+    margin-left: 6.9em;
+}
+
+.logo {
+    width: 13.4em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+main {
+    display: flex;
+    gap: 4%;
+
+}
+
+.web-image {
+    width: 100%;
+}
+
+.container-right {
+    position: relative;
+    max-width: 40em;
+    margin-top: 1em;
+}
+
+h1 {
+    font-size: 2.6em;
+    letter-spacing: -1.1px;
+    color: white;
+    margin-right: 2.5em;
+    line-height: 1.45em;
+
+}
+
+p {
+    font-family: 'Open Sans';
+    font-size: 1.125em;
+    color: hsla(0, 0%, 100%, .8);
+    margin-top: -0.4em;
+    margin-right: 7em;
+    line-height: 1.5em;
+}
+
+button {
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: var(--Violet);
+    background-color: white;
+    border-radius: 3em;
+    padding: 0.8em 3.5em;
+    border: none;
+    margin-top: 0.3em;
+    box-shadow: 7px 7px 10px darkslateblue;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--SoftMagenta);
+    color: white;
+    transition: 100ms ease-in-out;
+}
+
+
+
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 2.2em;
+    left: 23.9em;
+    bottom: -2.85em;
+    padding-bottom: 3em;
+}
+
+.social {
+    width: 1.3em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    outline: 1px solid white;
+    outline-offset: 8px;
+    transition: 100ms ease-in-out;
+    
+}
+
+.facebook {
+    background: url(images/facebook-brands.svg) no-repeat center center;
+}
+
+
+.twitter { 
+    background: url(images/twitter-brands.svg) no-repeat center center;
+}
+
+.instagram { 
+    background: url(images/instagram-brands.svg) no-repeat center center;
+
+}
+
+/* --------------CONTACTS HOVER-------------*/
+
+.facebook:hover {   
+    background: url(images/facebook-brands-pink.svg) no-repeat center center;
+    outline: 1px solid var(--SoftMagenta);
+}
+
+.twitter:hover { 
+    background: url(images/twitter-brands-pink.svg) no-repeat center center;
+    outline: 1px solid var(--SoftMagenta);
+}
+
+.instagram:hover { 
+    background: url(images/instagram-brands-pink.svg) no-repeat center center;
+    outline: 1px solid var(--SoftMagenta);
+
+}
+
+
+::selection {
+    background-color: var(--SoftMagenta);
+}
+
+
+/* ------------ MEDIA QUERIES--------------*/
+
+@media (max-width: 1420px) {
+    footer {
+        left: -14em;
+        bottom: -10em;
+        padding-bottom: 5em;
+    }
+}
+
+@media (max-width:1340px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-right {
+        text-align: center;
+    }
+
+    button {
+        margin-left: -6em;
+    }
+
+    footer {
+        left: 12.5em;
+}
+}
+
+@media (max-width:800px) {
+    body {
+        background: url(images/bg-mobile.svg) no-repeat top;
+        background-color: var(--Violet);
+        background-size: contain;
+        margin: 0 1.5em;
+    }
+
+    h1,p {
+        margin-right: 0 ;
+    }
+    
+   button {
+    margin-left: 0;
+   }
+
+   footer {
+    margin: 0 auto;
+    position: static;
+    margin-top: 3em;
+}
+}
+
+@media (max-width:400px) {
+    .container-right {
+        font-size: 75%;
+
+}
+    button {
+        margin-top: 1em;
+        padding: 0.5em 4em;
+    }
+
+}
